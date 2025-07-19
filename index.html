@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Crêperie  en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue à SOKHNA Crêpes </h1>
+        <p>Commander vos Crêpes en ligne !</p>
+    </header>
+    <main> 
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="item">
+                <img src="image/céréale.jpg" alt=" Crêpe Salé" class="item-image">
+                <h3>Crêpe Salé </h3>
+                <p>Quantité/ :2 </p>
+                <span class="price">1500 FCFA</span>
+                <button onclick="addToCart( 'Crêpe Salé', 1500 )">Ajouter</button>
+            </div>
+            <div class="item">
+                <img src="image/nature.jpeg" alt="Crêpe Sucré Nature" class="item-image">
+                <h3>Crêpe Sucré simple </h3>
+                <p>Quantité/ :10 </p>
+                <span class="price">1000 FCFA</span>
+                <button onclick="addToCart( 'Crêpe Sucré', 1000 )">Ajouter</button>
+            </div>
+            <div class="item">
+                <img src="image/céréale.jpg" alt="Crêpe céréal" class="item-image">
+                <h3>Crêpe Sucré au céréal </h3>
+                <p>Quantité/ :4 </p>
+                <span class="price">1300 FCFA</span>
+                <button onclick="addToCart( 'Crêpe Sucré double', 1300)">Ajouter</button>
+            </div>
+            <div class="item">
+                <img src="image/nutela.jpg" alt="Crêpe Sucré au chocolat" class="item-image">
+                <h3>Crêpe Sucré au chocolat </h3>
+                <p>Quantité/ :2 </p>
+                <span class="price">1200 FCFA</span>
+                <button onclick="addToCart( 'Crêpe Sucré au chocolat', 1200 )">Ajouter</button>
+
+        </div>
+        <div class="item">
+                <img src="image/nutela.jpg" alt="Crêpe Sucré au nutela" class="item-image">
+                <h3>Crêpe Sucré au nutela </h3>
+                <p>Quantité/ :10 </p>
+                <span class="price">2500FCFA</span>
+                <button onclick="addToCart( 'Crêpe Sucré au nutela', 2500)">Ajouter</button>
+            </div>
+    </div>
+    <section class="Panier">
+        <h2>Votre Panier</h2>
+        <ul id="cart"></ul>
+        <p>Total: <span id="total">0</span> FCFA</p>
+        <button onclick="commander()">Commander</button>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Crêperie en Ligne - Abidjan </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
